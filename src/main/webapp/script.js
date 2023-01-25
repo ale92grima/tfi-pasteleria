@@ -1,4 +1,7 @@
 function calcular (){
+// Precio = cantidad de porciones * $250
+
+
     var cant,calculo, total;
     var precio=150;
     cant=document.getElementById("cant-porciones").value;
