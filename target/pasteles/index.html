@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand text-white " href="#">
+        <img src="imagenes/logo.png" alt="..." height="60" >Pasteleria</a>
+    <ul class="nav nav-pills ">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="#main">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#about">Acerca de</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="#gallery">Galeria</a>
+      </li>
+    
+      <li class="nav-item ">
+       
+         
+          <a href="#buy" class="btn btn-sm btn-light text-white" role="button" style="background-color: #db2093;">Realizar Pedido</a>
+     
+      </li>
+
+    </ul>
+  </nav>
+</header>
+ 
+<main role="main" class="inner cover">
+  <section class="container-fluid">
+    <h1 id="main" class="cover-heading">Pasteleria</h1>
+    <p id="about" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum eveniet odit perferendis sint illo, voluptatibus beatae illum ex officiis quam sunt voluptates recusandae ipsam est nesciunt assumenda impedit minima exercitationem? Earum mollitia, deserunt corporis delectus dolorem unde atque impedit ab doloribus labore ut facilis distinctio obcaecati accusamus nulla in expedita architecto neque laboriosam nisi veniam ex accusantium. Cum, dicta saepe. Ea consequuntur voluptate cumque alias. Eaque facere quia molestiae rerum, tempore possimus molestias voluptate commodi fuga fugiat, dolorem eveniet perspiciatis nulla aliquam minus pariatur. Dolorum repellat odio repellendus vitae, quia saepe sapiente. Rem vitae exercitationem excepturi illo fugit et.</p>
+  </section>
+ <div class="container-fluid">
+  <h1 id="gallery"> Galeria</h1>
+ </div>
+  <section class="card-group">
+   
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"src="imagenes/balcarce.jpg" alt="Card image cap">
+          <div class="card-title">
+            <h5>Balcarce</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"src="imagenes/brownie.jpg" alt="Card image cap">
+          <div class="card-title">
+            <h5>Brownie</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"src="imagenes/chaja.jpg" alt="Card image cap">
+          <div class="card-title">
+            <h5>Chajá</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"src="imagenes/imperial-ruso.jpeg" alt="Card image cap">
+          <div class="card-title">
+            <h5>Imperial Ruso</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"src="imagenes/rogel.jpeg" alt="Card image cap">
+          <div class="card-title">
+            <h5>Rogel</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top"src="imagenes/selva-negra.jpg" alt="Card image cap">
+          <div class="card-title">
+            <h5>Selva Negra</h5></div>
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> 
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!--FORMULARIO-->
+  <section>
+
+      <h2 id="buy">Añadir Pedido</h2>
+      
+      <form action="nuevopedido" method="post">
+        <div class="container">
+            <div class="row g-3">
+              <div class="col-6">    
+                  <label >Nombre y Apellido</label>
+                  <input  class="form-control" name="cliente" type="text"/>
+              </div>
+              <div class="col-6">
+                  <label>Tipo de Pastel</label>
+                  <select class="form-control" name="tipo" type="text">
+                      <option value="Chajá">Chajá</option>
+                      <option value="Rogel">Rogel</option>
+                      <option value="Selva Negra">Selva Negra</option>
+                      <option value="Imperial ruso">Imperial ruso</option>
+                      <option value="Brownie">Brownie</option>
+                      <option value="Balcarce">Balcarce</option>
+                  </select>
+              </div>
+            </div>
+              
+            
+            <div class="row g-3">
+              <div class="col-6">
+                
+                  <label for="cant-porciones">Porciones</label>
+                  <input id="cant-porciones" name="porcion" type="number" class="form-control"/>
+              
+              </div>
+              <div class="col-6">
+                
+                  <label>Total</label>
+                  <input id="resultado" name="total_pagar" type="text" class="form-control"/>
+              
+              </div>
+            </div>
+            <br>
+            <div class="row g-3"style="text-align:center">
+              <div class="container-btn">
+                <input  class= "btn btn-light"type="submit" value="Guardar"/>
+             
+                <button type="button" class= "btn btn-light" id="btn-calcular" onclick="calcular()">Calcular</button>
+                </div>
+            </div>
+            <div class="row g-3"style="text-align:center">
+              <div class="col-xs-4">
+              <div class="container-btn"></div>
+            </div>
+              <a class= "btn btn-light" href="vertodos.html">Buscar por ID</a>
+              </div>
+            </div>
+      </div>
+            
+      </form>
+
+</section>
+    
+</main>
+
+  
+
+    <footer >
+
+    
+      <div class="container-fluid">
+        
+          <h5>© 2022 - Alexis Romina Grima  </h5>
+          <p>Trabajo Intergrador - Bases de Datos</p>
+
+      </div>  
+      </footer>
+<script src="js/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
